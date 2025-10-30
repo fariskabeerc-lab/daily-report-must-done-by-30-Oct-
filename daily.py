@@ -7,7 +7,7 @@ from streamlit_gsheets import GSheetsConnection
 # PAGE CONFIG
 # ==========================================
 st.set_page_config(page_title="Customer Feedback", layout="centered")
-
+st.write("feedback_submissions_url:", st.secrets.get("feedback_submissions_url", "❌ NOT FOUND"))
 # ==========================================
 # GOOGLE SHEETS CONNECTION & URL
 # ==========================================
